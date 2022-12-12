@@ -40,7 +40,7 @@ def compute_returns(next_value, rewards, masks, gamma=discnt_rt):
 
 actor = Actor([state_size, hid_layer_size, action_size], device=device)
 critic = Critic([state_size, hid_layer_size, action_size], device=device)
-num_episodes = 2000
+num_episodes = 3000
 episode_timout = 1000
 
 scores_deque = deque(maxlen=100)

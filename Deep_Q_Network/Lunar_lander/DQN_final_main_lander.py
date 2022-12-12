@@ -41,7 +41,7 @@ for i in range(exp_storage_size):
             
 losses_list, reward_list, episode_len_list, epsilon_list  = [], [], [], []
 index = 128
-episodes = 20000
+episodes = 3000
 episode_timout = 10000
 epsilon = 1
 

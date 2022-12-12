@@ -25,12 +25,12 @@ a_size = env.action_space.n
 hid_layer_size = 64
 
 learnRate = 1e-3
-num_episodes = 2500
+num_episodes = 3000
 episode_timout = 1000
 discount_rate = 0.99
 score_disp_interval = 100
 
-policy = Policy(layer_sizes=[s_size, hid_layer_size, hid_layer_size, a_size])
+policy = Policy(layer_sizes=[s_size, hid_layer_size, a_size])
 
 optimizer = torch.optim.Adam(policy.parameters(), lr=learnRate)
 
